@@ -1,8 +1,8 @@
 <?php
 
-namespace AlbertoRoldanQ\DiskMonitor;
+namespace Albertoroldanq\DiskMonitor;
 
-use AlbertoRoldanQ\DiskMonitor\Commands\RecordDiskMetricsCommand;
+use Albertoroldanq\DiskMonitor\Commands\RecordDiskMetricsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

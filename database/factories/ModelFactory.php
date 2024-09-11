@@ -1,6 +1,6 @@
 <?php
 
-namespace AlbertoRoldanQ\DiskMonitor\Database\Factories;
+namespace Albertoroldanq\DiskMonitor\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

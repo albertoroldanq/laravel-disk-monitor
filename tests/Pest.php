@@ -1,5 +1,5 @@
 <?php
 
-use AlbertoRoldanQ\DiskMonitor\Tests\TestCase;
+use Albertoroldanq\DiskMonitor\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

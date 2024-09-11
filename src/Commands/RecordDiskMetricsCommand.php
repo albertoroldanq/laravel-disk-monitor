@@ -1,6 +1,6 @@
 <?php
 
-namespace AlbertoRoldanQ\DiskMonitor\Commands;
+namespace Albertoroldanq\DiskMonitor\Commands;
 
 use Illuminate\Console\Command;
 

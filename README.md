@@ -44,8 +44,8 @@ php artisan vendor:publish --tag="laravel-disk-monitor-views"
 ## Usage
 
 ```php
-$diskMonitor = new AlbertoRoldanQ\DiskMonitor();
-echo $diskMonitor->echoPhrase('Hello, AlbertoRoldanQ!');
+$diskMonitor = new Albertoroldanq\DiskMonitor();
+echo $diskMonitor->echoPhrase('Hello, Albertoroldanq!');
 ```
 
 ## Testing

@@ -1,5 +1,5 @@
 <?php
 
-namespace AlbertoRoldanQ\DiskMonitor;
+namespace Albertoroldanq\DiskMonitor;
 
 class DiskMonitor {}

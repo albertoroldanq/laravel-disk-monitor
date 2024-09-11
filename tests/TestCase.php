@@ -1,8 +1,8 @@
 <?php
 
-namespace AlbertoRoldanQ\DiskMonitor\Tests;
+namespace Albertoroldanq\DiskMonitor\Tests;
 
-use AlbertoRoldanQ\DiskMonitor\DiskMonitorServiceProvider;
+use Albertoroldanq\DiskMonitor\DiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'AlbertoRoldanQ\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Albertoroldanq\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

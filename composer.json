@@ -2,7 +2,7 @@
     "name": "albertoroldanq/laravel-disk-monitor",
     "description": "Monitor metrics of Laravel disk",
     "keywords": [
-        "AlbertoRoldanQ",
+        "Albertoroldanq",
         "laravel",
         "laravel-disk-monitor"
     ],
@@ -30,18 +30,17 @@
         "pestphp/pest-plugin-laravel": "^2.3",
         "phpstan/extension-installer": "^1.3",
         "phpstan/phpstan-deprecation-rules": "^1.1",
-        "phpstan/phpstan-phpunit": "^1.3",
-        "spatie/laravel-ray": "^1.35"
+        "phpstan/phpstan-phpunit": "^1.3"
     },
     "autoload": {
         "psr-4": {
-            "AlbertoRoldanQ\\DiskMonitor\\": "src/",
-            "AlbertoRoldanQ\\DiskMonitor\\Database\\Factories\\": "database/factories/"
+            "Albertoroldanq\\DiskMonitor\\": "src/",
+            "Albertoroldanq\\DiskMonitor\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AlbertoRoldanQ\\DiskMonitor\\Tests\\": "tests/",
+            "Albertoroldanq\\DiskMonitor\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AlbertoRoldanQ\\DiskMonitor\\DiskMonitorServiceProvider"
+                "Albertoroldanq\\DiskMonitor\\DiskMonitorServiceProvider"
             ],
             "aliases": {
-                "DiskMonitor": "AlbertoRoldanQ\\DiskMonitor\\Facades\\DiskMonitor"
+                "DiskMonitor": "Albertoroldanq\\DiskMonitor\\Facades\\DiskMonitor"
             }
         }
     },

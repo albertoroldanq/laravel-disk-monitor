@@ -1,6 +1,6 @@
 <?php
 
-use AlbertoRoldanQ\DiskMonitor\Commands\RecordDiskMetricsCommand;
+use Albertoroldanq\DiskMonitor\Commands\RecordDiskMetricsCommand;
 
 use function Pest\Laravel\artisan;
 
