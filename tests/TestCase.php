@@ -16,8 +16,6 @@ class TestCase extends Orchestra
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'Albertoroldanq\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
-
-        Storage::fake('local');
     }
 
     protected function getPackageProviders($app)

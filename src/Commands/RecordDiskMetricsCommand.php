@@ -4,6 +4,7 @@ namespace Albertoroldanq\DiskMonitor\Commands;
 
 use Albertoroldanq\DiskMonitor\Models\DiskMonitorEntry;
 use Illuminate\Console\Command;
+use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 
 class RecordDiskMetricsCommand extends Command
@@ -14,9 +15,19 @@ class RecordDiskMetricsCommand extends Command
 
     public function handle(): int
     {
-        $this->comment('Recording metrics...');
+        collect(config('disk-monitor.disk_names'))
+        ->each(fn(string $diskName) => $this->recordMetrics($diskName));
 
-        $diskName = config('disk-monitor.disk_name');
+        $this->comment('All done');
+
+        return self::SUCCESS;
+    }
+
+    protected function recordMetrics(string $diskName): void
+    {
+        $this->info("Reocrding metrics for disk `{$diskName}`...");
+        $disk = Storage::disk($diskName);
+
         $fileCount = count(Storage::disk($diskName)->allFiles());
 
         DiskMonitorEntry::create([
@@ -24,8 +35,6 @@ class RecordDiskMetricsCommand extends Command
             'file_count' => $fileCount,
         ]);
 
-        $this->comment('All done');
-
-        return self::SUCCESS;
+        $fileCount = count($disk->allFiles());
     }
 }
