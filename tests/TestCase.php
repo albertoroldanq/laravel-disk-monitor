@@ -4,7 +4,6 @@ namespace Albertoroldanq\DiskMonitor\Tests;
 
 use Albertoroldanq\DiskMonitor\DiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Storage;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

@@ -34,4 +34,3 @@ it('will record the file count for multiple disks', function () {
     $this->assertEquals('anotherDisk', $entries[1]->disk_name);
     $this->assertEquals(1, $entries[1]->file_count);
 });
-

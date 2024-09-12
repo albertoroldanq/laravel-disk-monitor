@@ -4,7 +4,6 @@ namespace Albertoroldanq\DiskMonitor\Commands;
 
 use Albertoroldanq\DiskMonitor\Models\DiskMonitorEntry;
 use Illuminate\Console\Command;
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 
 class RecordDiskMetricsCommand extends Command
@@ -16,7 +15,7 @@ class RecordDiskMetricsCommand extends Command
     public function handle(): int
     {
         collect(config('disk-monitor.disk_names'))
-        ->each(fn(string $diskName) => $this->recordMetrics($diskName));
+            ->each(fn (string $diskName) => $this->recordMetrics($diskName));
 
         $this->comment('All done');
 
