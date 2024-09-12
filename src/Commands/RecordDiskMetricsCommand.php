@@ -20,7 +20,7 @@ class RecordDiskMetricsCommand extends Command
         $fileCount = count(Storage::disk($diskName)->allFiles());
 
         DiskMonitorEntry::create([
-           'disk_name' => $diskName,
+            'disk_name' => $diskName,
             'file_count' => $fileCount,
         ]);
 

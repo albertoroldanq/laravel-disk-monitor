@@ -4,8 +4,7 @@ use Albertoroldanq\DiskMonitor\Commands\RecordDiskMetricsCommand;
 use Albertoroldanq\DiskMonitor\Models\DiskMonitorEntry;
 use Illuminate\Support\Facades\Storage;
 
-
-it('will record the file count for a disk', function() {
+it('will record the file count for a disk', function () {
     $this->artisan(RecordDiskMetricsCommand::class)->assertExitCode(0);
     $entry = DiskMonitorEntry::last();
 
