@@ -44,6 +44,11 @@ Optionally, you can publish the views using
 php artisan vendor:publish --tag="disk-monitor-views"
 ```
 
+And you can add a route to load the view by using the package macro:
+```php
+Route::diskMonitor('disk-monitor');
+```
+
 ## Usage
 
 ```php
