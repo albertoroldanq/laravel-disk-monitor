@@ -18,14 +18,14 @@ composer require albertoroldanq/laravel-disk-monitor
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-disk-monitor-migrations"
+php artisan vendor:publish --tag="disk-monitor-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-disk-monitor-config"
+php artisan vendor:publish --tag="disk-monitor-config"
 ```
 
 This is the contents of the published config file:
@@ -41,7 +41,7 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="laravel-disk-monitor-views"
+php artisan vendor:publish --tag="disk-monitor-views"
 ```
 
 ## Usage
