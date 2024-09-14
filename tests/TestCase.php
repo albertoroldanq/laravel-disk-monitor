@@ -4,6 +4,7 @@ namespace Albertoroldanq\DiskMonitor\Tests;
 
 use Albertoroldanq\DiskMonitor\DiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -15,6 +16,8 @@ class TestCase extends Orchestra
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'Albertoroldanq\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
+
+        Route::diskMonitor('disk-monitor');
     }
 
     protected function getPackageProviders($app)
