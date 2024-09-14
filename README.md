@@ -32,6 +32,9 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'disk_names' => [
+        'local',
+    ],
 ];
 ```
 
@@ -53,10 +56,6 @@ echo $diskMonitor->echoPhrase('Hello, Albertoroldanq!');
 ```bash
 composer test
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
